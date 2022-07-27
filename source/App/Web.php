@@ -3,6 +3,7 @@
 namespace Source\App;
 
 use Source\Core\Controller;
+use Source\Models\UserModel;
 
 
 class Web extends Controller
@@ -14,6 +15,7 @@ class Web extends Controller
 
     public function home()
     {
+      // var_dump(($user = new UserModel())->find()->fetch()) ;
 
             $head = $this->seo->render(
                 CONF_SITE_NAME . " - " . CONF_SITE_TITLE,
