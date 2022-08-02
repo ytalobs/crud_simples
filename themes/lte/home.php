@@ -3,61 +3,48 @@
 <div class="container-fluid">
     <!-- Small boxes (Stat box) -->
     <div class="row">
-        <div class="col-lg-3 col-6">
+        <div class="col-lg-4 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
                 <div class="inner">
                     <h3>150</h3>
 
-                    <p>New Orders</p>
+                    <p>Usuários</p>
                 </div>
                 <div class="icon">
-                    <i class="ion ion-bag"></i>
+                    <i class="fa-solid fa-user-group"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
         <!-- ./col -->
-        <div class="col-lg-3 col-6">
+        <div class="col-lg-4 col-6">
             <!-- small box -->
             <div class="small-box bg-success">
                 <div class="inner">
                     <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-                    <p>Bounce Rate</p>
+                    <p>Usuários Confirmados</p>
                 </div>
                 <div class="icon">
-                    <i class="ion ion-stats-bars"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
         <!-- ./col -->
-        <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-                <div class="inner">
-                    <h3>44</h3>
 
-                    <p>User Registrations</p>
-                </div>
-                <div class="icon">
-                    <i class="ion ion-person-add"></i>
-                </div>
-                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
         <!-- ./col -->
-        <div class="col-lg-3 col-6">
+        <div class="col-lg-4 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
                 <div class="inner">
                     <h3>65</h3>
 
-                    <p>Unique Visitors</p>
+                    <p>Posts</p>
                 </div>
                 <div class="icon">
-                    <i class="ion ion-pie-graph"></i>
+                    <i class="fa-solid fa-comment"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -160,6 +147,10 @@
         <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">View All Orders</a>
     </div>
 </div>
+<?php $v->start("scripts")?>
 
+<script src="<?=theme("../dist/js/demo.js") ?>"></script>
+
+<?php $v->end()?>
 
 <!-- /.card-footer -->
