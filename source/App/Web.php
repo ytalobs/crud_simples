@@ -2,8 +2,10 @@
 
 namespace Source\App;
 
+use Example\Models\Address;
 use Source\Core\Controller;
-use Source\Models\UserModel;
+use Source\Models\Posts;
+use Source\Models\User;
 
 
 class Web extends Controller
@@ -13,9 +15,15 @@ class Web extends Controller
         parent::__construct(__DIR__ . "/../../themes/" . CONF_VIEW_THEME . "/");
     }
 
+    /**
+     * SITE HOME
+     * @return void
+     */
     public function home()
     {
-      // var_dump(($user = new UserModel())->find()->fetch()) ;
+            $confirmedUsers = (new User())->find("status = :status", "status=confirmed")->count();
+            $totalUsers = (new User())->find()->count();
+            $porcUsers = ($confirmedUsers * 100) / $totalUsers;
 
             $head = $this->seo->render(
                 CONF_SITE_NAME . " - " . CONF_SITE_TITLE,
@@ -26,8 +34,21 @@ class Web extends Controller
 
             echo $this->view->render("home", [
                 "head" => $head,
-                "video" => "lDZGl9Wdc7Y",
+                "users" => (new User())
+                    ->find()
+                    ->order("id DESC")
+                    ->limit(10)
+                    ->fetch(true),
 
+                "usersCount" => (new User())
+                    ->find()
+                    ->count(),
+
+                "posts" => (new Posts())
+                    ->find()
+                    ->count(),
+
+                "porcUsers" => $porcUsers
             ]);
     }
 
@@ -78,6 +99,6 @@ class Web extends Controller
             "error" => $error
         ]);
     }
-    
+
 
 }
