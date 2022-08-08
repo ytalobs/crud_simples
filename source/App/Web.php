@@ -52,6 +52,20 @@ class Web extends Controller
             ]);
     }
 
+    public function faq()
+    {
+        $head = $this->seo->render(
+            CONF_SITE_NAME . " - " . CONF_SITE_TITLE,
+            CONF_SITE_DESC,
+            url(),
+            theme("/assets/images/share.jpg")
+        );
+
+        echo $this->view->render("faq", [
+            "head" => $head,
+        ]);
+    }
+
     /**
      * SITE NAV ERROR
      * @param array $data
