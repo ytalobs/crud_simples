@@ -72,7 +72,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?= url("faq") ?>" class="nav-link">
                 <i class="fa-regular fa-circle-question"></i>
               <p>
                 Faq
@@ -133,7 +133,7 @@
 <!-- AdminLTE App -->
 <script src="<?= theme("dist/js/adminlte.min.js") ?>"></script>
 
-<?php $v->section("scripts"); ?>
+<?php $v->section('scripts'); ?>
 
 </body>
 </html>

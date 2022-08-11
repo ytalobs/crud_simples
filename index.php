@@ -19,7 +19,8 @@ $route = new Router(url(), ":");
  */
 $route->namespace("Source\App");
 $route->get("/", "Web:home");
-//$route->get("/erro", "Web:erro");
+$route->get("/faq", "Web:faq");
+
 
 /*
  * ERROR ROUTES

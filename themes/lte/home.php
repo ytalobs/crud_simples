@@ -106,7 +106,7 @@
         <a href="#" class="btn btn-sm btn-secondary float-right">Ver todos</a>
     </div>
 </div>
-<?php $v->start("scripts") ?>
+<?php $v->start('scripts') ?>
 
 <script src="<?= theme("../dist/js/demo.js") ?>"></script>
 
