@@ -133,6 +133,8 @@
 <!-- AdminLTE App -->
 <script src="<?= theme("dist/js/adminlte.min.js") ?>"></script>
 
+
+
 <?php $v->section('scripts'); ?>
 
 </body>

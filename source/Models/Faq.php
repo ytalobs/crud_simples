@@ -6,8 +6,8 @@ use CoffeeCode\DataLayer\DataLayer;
 
 class Faq extends DataLayer
 {
-public function __construct()
-{
-    parent::__construct($entity, $required, $primary, $timestamps);
-}
+    public function __construct()
+    {
+        parent::__construct($entity, $required, $primary, $timestamps);
+    }
 }

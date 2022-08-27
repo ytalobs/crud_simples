@@ -20,10 +20,10 @@
     <!-- Main content -->
     <section class="content">
         <div class="error-page">
-            <h2 class="headline text-warning"><?= $error->code; ?> </h2>
+            <h2 class="headline text-warning"> <?= $error->code; ?> </h2>
 
             <div class="error-content">
-                <h3><i class="fas fa-exclamation-triangle text-warning"></i><?= $error->title; ?> </h3>
+                <h3><i class="fas fa-exclamation-triangle text-warning"></i> <?= $error->title; ?> </h3>
                 <p>
                     <?= $error->message; ?>
                 </p>

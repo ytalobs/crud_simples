@@ -1,5 +1,4 @@
 <?php $v->layout('theme'); ?>
-  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -20,7 +19,7 @@
     <!-- Main content -->
     <section class="content">
         <div class="row">
-            <div class="col-12" id="accordion">
+            <div class="col-lg-12" id="accordion">
                 <div class="card card-primary card-outline">
                     <a class="d-block w-100" data-toggle="collapse" href="#collapseOne">
                         <div class="card-header">
@@ -159,10 +158,7 @@
         </div>
     </section>
     <!-- /.content -->
-  </div>
   <!-- /.control-sidebar -->
-</div>
-
 
 <!-- ./wrapper -->
 
